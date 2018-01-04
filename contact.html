@@ -113,11 +113,32 @@
             </tr>
           </tbody>
           </table>
-          <h3 class="registration">Pour valider votre reservation, completer ce formulaire</h3>
+          <h3 class="rezervation">Pour valider votre reservation, completer ce formulaire</h3>
   <!--Formos-->
           <form class="registration" action="index.html" method="post">
-            <input type="text" name="first_name" placeholder="First Name">
-            <input type="text" name="last_name" placeholder="Last Name">
+            <div class="name">
+              <input class="first-name" type="text" name="first_name" placeholder="First Name">
+              <input class="last-name" type="text" name="last_name" placeholder="Last Name">
+            </div>
+            <div class="email">
+              <input type="text" name="email_adress" placeholder="Email Adress">
+            </div>
+            <p>Quels sont les raisons de votre venue?</p>
+            <input type="checkbox" name="besoin">Besoin de me detendre
+            <input type="checkbox" name="medecin">Mon medecin m'a conseille de venir
+            <input type="checkbox" name="tester">Je veux tester avec des amis
+            <p>Voulez-vous souscrire a notre programme de fidelitte?</p>
+            <input type="radio" name="question">Yes
+            <input type="radio" name="question">No
+            <p>Comment avez-vous connu Omnibus?</p>
+            <select class="selection" name="select">
+              <option>On internet</option>
+              <option>From friends</option>
+              <option>From newsletter</option>
+            </select>
+            <div class="btn">
+              <button type="submit">Submit</button>
+            </div>
           </form>
   <!--FOOTER-->
       <footer>

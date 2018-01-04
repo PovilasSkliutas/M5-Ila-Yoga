@@ -6,8 +6,9 @@ html {
   font-size: 14px;
 }
 body  {
-  max-width: 1500px;
   font-size: 1rem;
+  margin: 0 auto;
+  max-width: 1500px;
 }
 a {
   text-decoration: none;
@@ -26,8 +27,8 @@ h3 {
   font-family: 'courgette';
   font-weight: normal;
 }
-img {
-  max-width: 100%;
+button {
+  outline: 0;
 }
 
 /*HEADER STYLES*/
@@ -57,6 +58,7 @@ img {
 /*MAIN STYLES*/
 .presentation {
   background-image: url("../img/fond.jpg");
+  background-repeat: no-repeat;
   padding: 300px 0;
   text-align: center;
 }
@@ -159,19 +161,60 @@ th:first-child, td:first-child {
   text-align: left;
   width: 35%;
 }
-.registration {
+.rezervation {
   text-align: center;
   font-family: 'courgette';
   font-weight: normal;
+  padding: 20px;
 }
-input {
-  font-family: 'open sans';
-  outline: 0;
-  text-align: left;
+.registration {
+  text-align: center;
+}
+.registration p {
+  text-align: center;
+  font-family: 'courgette';
+  font-weight: normal;
+  padding: 20px;
+}
+.name, .email {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+div.name input {
   color: #4ac3b4;
-  font-weight: bold;
-  border-bottom: 2px;
+  border-style: none;
+  border-bottom: solid 2px #4ac3b4;
   width: 40%;
+}
+input.first-name {
+  margin-right: 5%;
+}
+input.last-name {
+  margin-left: 5%;
+}
+div.email input {
+  color: #4ac3b4;
+  border-style: none;
+  border-bottom: solid 2px #4ac3b4;
+  width: 90%;
+}
+input[type="checkbox"], input[type="radio"] {
+  margin: 0 10px;
+}
+.selection {
+  background-color: inherit;
+  border-color: #4ac3b4;
+  color: #4ac3b4;
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+.btn button {
+  background-color: #4ac3b4;
+  border-style: none;
+  padding: 10px;
+  margin-bottom: 30px;
 }
 
 /*FOOTER*/
@@ -183,5 +226,5 @@ footer {
   padding: 20px;
 }
 footer p {
-  margin: 0;
+  margin: 0 auto;
 }
